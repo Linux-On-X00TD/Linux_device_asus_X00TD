@@ -69,12 +69,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    com.dsi.ant.antradio_library
+# PRODUCT_PACKAGES += \
+#     AntHalService \
+#     com.dsi.ant.antradio_library
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+# PRODUCT_COPY_FILES += \
+#     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -127,8 +127,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libxml2 \
-    Snap
+    libxml2
+#     Snap
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -221,8 +221,8 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0-java
 
 # IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common
+# PRODUCT_PACKAGES += \
+#     ims-ext-common
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -303,7 +303,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
-    Tag \
+    Tag
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -383,8 +383,8 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libprotobuf-cpp-full
 
-PRODUCT_BOOT_JARS += \
-    qcrilhook
+# PRODUCT_BOOT_JARS += \
+#     qcrilhook
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -412,11 +412,11 @@ PRODUCT_COPY_FILES += \
 -include $(LOCAL_PATH)/system_prop.mk
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+# PRODUCT_PACKAGES += \
+#     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_BOOT_JARS += \
+#     telephony-ext
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
@@ -452,7 +452,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.0-service.basic
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -476,19 +476,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+# PRODUCT_BOOT_JARS += \
+#     WfdCommon
 
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    hostapd \
-    hostapd_cli \
+#     hostapd \
+#     hostapd_cli \
     libwifi-hal-qcom \
     wcnss_service \
     wificond \
-    wpa_supplicant \
-    wpa_supplicant.conf \
+#     wpa_supplicant \
+#     wpa_supplicant.conf \
     wifi-mac-generator
 
 PRODUCT_COPY_FILES += \
